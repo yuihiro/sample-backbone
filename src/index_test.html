@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/pace/1.0.2/themes/black/pace-theme-minimal.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="http://www.d3plus.org/js/d3.js"></script>
+    <script src="http://www.d3plus.org/js/d3plus.js"></script>
+    <script type="text/javascript" src="/js/vendor.js"></script>
+    <script type="text/javascript" src="/js/bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="/lib/jquery.layout-latest.js"></script>
+</head>
+
+<body>
+    <div id="app_container" class="app">
+        <div id="menu_container" class="ui-layout-north"></div>
+        <div id="content_container" class="ui-layout-center"></div>
+        <div id="status_container" class="ui-layout-south"></div>
+    </div>
+
+<script>
+    jQuery(function ($) {
+        $('#app_container').enhsplitter();
+    });
+</script>    
+</body>
+
+</html>

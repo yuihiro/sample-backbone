@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td align="center">ID</td>
+        <td align="center">이름</td>
+        <td align="center">IP</td>
+        <td align="center">MAC</td>
+        <td align="center">상태</td>
+        <td align="center"><input type="checkbox" name="chk_info" id="all_radio"/></td>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#each items}}
+        <tr>
+            <td align="center"><a href="{{id}}">{{id}}</a></td>
+            <td align="center">{{name}}</td>
+            <td align="center">{{ip}}</td>
+            <td align="center">{{mac_str}}</td>
+            <td align="center">{{status_str}}</td>
+            <td align="center"><input type="checkbox" /></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,61 @@
+<div class="ui fluid container">
+    <div class="ui two column grid middle aligned" style="height: 60px">
+        <div class="left aligned eight wide column">
+            <h4 class="ui header">
+                <i class="settings icon"></i>
+                <div class="content">AP 목록
+                    <div class="sub header">Manage AP List</div>
+                </div>
+            </h4>
+        </div>
+        <div class="right aligned eight wide column">
+            <button class="ui icon button" id="refresh_btn">
+                <i class="refresh icon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui fluid container">
+        <div class="ui divided two column grid" >
+            <div class="three wide column" >
+                <div class="ui container form">
+                    <div class="ui dividing header">검색</div>
+                    <div class="field">
+                        <lable>작동</lable>
+                        <select>
+                            <option value="-1">ALL</option>
+                            <option value="1">작동</option>
+                            <option value="0">미작동</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>BSSID</label>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <button class="ui fluid primary button" id="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="ui container">
+                    <div class="ui container form">
+                        <div class="ui dividing header">요약</div>
+                        <div class="field">
+                            <lable>작동</lable>
+                            <select>
+                                <option value="-1">ALL</option>
+                                <option value="1">작동</option>
+                                <option value="0">미작동</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thirteen wide column">
+                <div class="ui dividing header">목록</div>
+                <div id="table_container" class="ui fluid container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
